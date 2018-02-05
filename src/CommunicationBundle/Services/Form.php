@@ -96,10 +96,10 @@ class Form
 	}
 
 	/**
-	 * @return \Symfony\Component\Form\AbstractType
+	 * @return \Symfony\Component\Form\Form
 	 * @throws \Exception
 	 */
-	public function getForm() : \Symfony\Component\Form\AbstractType
+	public function getForm() : \Symfony\Component\Form\Form
 	{
 		if(!$this->form)
 			throw new \Exception('no form defined');

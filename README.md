@@ -24,7 +24,7 @@ DOCONOs Communication Bundle provides services to simplify the form handling and
 |---------------------------------------------------------------------------|--------------------------------------------------|
 | setForm(string $type) : Form                                              | set form type                                    |
 | setDataObject(DataObject\Concrete $dataObject, string $dir='/') : Form    | set dataObject                                   |
-| getForm() : \Symfony\Component\Form\AbstractType                          | get form                                         |
+| getForm() : \Symfony\Component\Form\Form                                  | get form                                         |
 | process() : bool                                                          | process the form submission and email handling   |
 | function sendNotification(): bool                                         | send notification email                          |
 | sendConfirmation(): bool                                                  | send confirmation email                          |

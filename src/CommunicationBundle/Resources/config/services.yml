@@ -1,6 +1,6 @@
 services:
   docono.communication.slack:
-    class: docono\CommunicationBundle\Services\Slack
+    class: CommunicationBundle\Services\Slack
   docono.communication.form:
-    class: docono\CommunicationBundle\Services\Form
+    class: CommunicationBundle\Services\Form
     arguments: ['@translator', '@request_stack', '@form.factory']
