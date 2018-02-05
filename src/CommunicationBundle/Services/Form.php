@@ -7,7 +7,7 @@
  * @since 1.0.0
  */
 
-namespace docono\CommunicationBundle\Services;
+namespace CommunicationBundle\Services;
 
 use Pimcore\Log\Simple;
 use Pimcore\Model\DataObject;

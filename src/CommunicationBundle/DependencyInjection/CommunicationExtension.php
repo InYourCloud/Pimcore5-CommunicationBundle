@@ -1,6 +1,6 @@
 <?php
 
-namespace docono\CommunicationBundle\DependencyInjection;
+namespace CommunicationBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

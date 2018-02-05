@@ -61,7 +61,7 @@ $this->view->successful = $successful;
 
 ### controller and view
 The bundle comes with a basic MailController and FormController.
-If you use Zurbs Fundation (foundation abide). Adjust the layout member to get the contact view in your desired layout and implement the `_form.scss` (CommunicationBundle/Resources/scss) in your foundation `app.scss`.
+If you use Zurbs Fundation (foundation abide) only Adjust the layout member to get the contact view in your desired layout and implement the `_form.scss` (CommunicationBundle/Resources/scss) in your foundation `app.scss`.
 
 NOTE: The contact view uses custom symfony form row and form errors templates!
 

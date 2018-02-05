@@ -1,6 +1,13 @@
 <?php
+/**
+ * DOCONO | digitale Problemlöser
+ *
+ * @author Renzo Müller <renzo@docono.io>
+ * @copyright  Copyright (c) DOCONO  (https://docono.io)
+ * @since 1.0.0
+ */
 
-namespace docono\CommunicationBundle\Services;
+namespace CommunicationBundle\Services;
 
 class Slack {
     private $webhook;
