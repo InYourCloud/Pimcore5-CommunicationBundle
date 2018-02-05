@@ -1,0 +1,5 @@
+communication:
+    resource: "@CommunicationBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

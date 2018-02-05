@@ -1,0 +1,22 @@
+form {
+  .error {
+    label {
+      color: $form-label-color-invalid;;
+    }
+
+    input {
+      background-color: mix($input-background-invalid, $white, 10%);
+      border-color: $input-background-invalid;
+    }
+
+    ul.error-list {
+      margin-left: 0;
+      margin-top: $form-spacing * -0.5;
+      margin-bottom: $form-spacing;
+      list-style: none;
+      font-size: $input-error-font-size;
+      font-weight: $input-error-font-weight;
+      color: $input-error-color;
+    }
+  }
+}

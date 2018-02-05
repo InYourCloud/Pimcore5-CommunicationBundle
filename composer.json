@@ -1,0 +1,30 @@
+{
+  "name": "docono/communication-bundle",
+  "type": "pimcore-bundle",
+  "license": "GPL-3.0+",
+  "description": "Pimcore 5.x communication services",
+  "keywords": [],
+  "homepage": "https://gitlab.com/docono.io/CompanyBundle",
+  "authors": [
+    {
+      "name": "DOCONO.io Renzo Müller",
+      "email": "renzo@docono.io",
+      "homepage": "https://docono.io",
+      "role": "Developer"
+    }
+  ],
+
+  "autoload": {
+    "psr-4": {
+      "CommunicationBundle\\": "src/"
+    }
+  },
+
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "CommunicationBundle\\CommunicationBundle"
+      ]
+    }
+  }
+}
