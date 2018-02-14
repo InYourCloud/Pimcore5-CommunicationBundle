@@ -27,4 +27,9 @@
       ]
     }
   }
+
+  "require": {
+    "facebook/graph-sdk": "^5",
+    "j7mbo/twitter-api-php": "^1"
+  }
 }
