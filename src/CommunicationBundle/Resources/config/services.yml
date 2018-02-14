@@ -1,6 +1,10 @@
 services:
   docono.communication.slack:
     class: CommunicationBundle\Services\Slack
+  docono.communication.facebook:
+    class: CommunicationBundle\Services\Facebook
+  docono.communication.twitter:
+    class: CommunicationBundle\Services\Twitter
   docono.communication.form:
     class: CommunicationBundle\Services\Form
     arguments: ['@translator', '@request_stack', '@form.factory']

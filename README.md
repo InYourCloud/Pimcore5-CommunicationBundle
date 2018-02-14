@@ -73,5 +73,5 @@ Send a message to any given Slack channel.
 ```php
 $slackService = $this->container->get('docono.communication.slack');
 
-$slackService->setWebhook('webhookURL')->submitMessage('#channelName', 'botName', 'message); 
+$slackService->setWebhook('webhookURL')->submitMessage('#channelName', 'botName', 'message'); 
 ```
