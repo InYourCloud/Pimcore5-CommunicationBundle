@@ -3,6 +3,9 @@
 * [Getting Started](#getting-started)
 * [Form Service](#form-service)
 * [Slack Service](#slack-service)
+* [Gitlab Service](#gitlab-service)
+* [Facebook Service](#facebook-service)
+* [Twitter Service](#twitter-service)
 
 <a name="description"/>
 
@@ -18,6 +21,7 @@ DOCONOs Communication Bundle provides services to simplify the form handling and
 <a name="form-service"/>
 
 ## Form Service
+Formhandling made easy.
 
 ### methods
 | method                                                                    | description                                      |
@@ -74,4 +78,60 @@ Send a message to any given Slack channel.
 $slackService = $this->container->get('docono.communication.slack');
 
 $slackService->setWebhook('webhookURL')->submitMessage('#channelName', 'botName', 'message'); 
+```
+
+
+<a name="gitlab-service"/>
+
+## Gitlab Service
+
+
+<a name="facebook-service"/>
+
+## Facebook Service
+Post to your Facebook timeline.
+
+### getting started
+- create an app in Facebook (https://developers.facebook.com/apps)
+- create a user token with 'manage_page' permission
+- convert the token into a non-expiring token
+
+### usage
+```php
+$facebookService = $this->container->get('docono.communication.facebook');
+
+$facebookService->setAppId('XXXXXXX')
+    ->setAppSecret('XXXXXXX')
+    ->setToken('XXXXXXX');
+    
+$data = [
+    'link' => 'https://docono.io',
+    'message' => 'DOCONO | digitale Problemlöser',
+    'picture' => 'https://docono.io/myImage.jpg'
+];
+    
+$facebookService->post('/me/feed', $data);
+```
+
+
+<a name="twitter-service"/>
+
+## Twitter Service
+Post or retrieve tweets from your Twitter account.
+
+### getting started
+- crate a new twitter app (https://apps.twitter.com/)
+- create an access token
+
+### usage
+```php
+$twitterService = $this->container->get('docono.communication.twitter');
+
+$twitterService->setOAuthToken('XXXXXXX')
+    ->setOAuthSecret('XXXXXXX')
+    ->setCustomerKey('XXXXXXX')
+    ->setCustomerSecret('XXXXXXX');
+
+
+$twitterService->postTweet('my tweet description', 'my visible tweet #awesomeness');
 ```

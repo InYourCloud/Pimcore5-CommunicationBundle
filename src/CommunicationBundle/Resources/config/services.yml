@@ -1,6 +1,8 @@
 services:
   docono.communication.slack:
     class: CommunicationBundle\Services\Slack
+  docono.communication.gitlab:
+    class: CommunicationBundle\Services\Gitlab
   docono.communication.facebook:
     class: CommunicationBundle\Services\Facebook
   docono.communication.twitter:
